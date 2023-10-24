@@ -196,7 +196,7 @@
           "trailing_diamond": "\ue0b4",
           "foreground": "#000000",
           "background": "#ebcc34",
-          "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
+          "template": " ⎈ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
         },
 
         {
