@@ -194,8 +194,8 @@
           "style": "diamond",
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
-          "foreground": "#000000",
-          "background": "#ebcc34",
+          "foreground": "#ffffff",
+          "background": "#2e71e0",
           "template": " ⎈ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
         },
 
