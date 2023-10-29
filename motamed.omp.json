@@ -19,13 +19,12 @@
           "powerline_symbol": "\ue0b0",
           "properties": {
             "style": "mixed",
-            "folder_separator_icon":"/"
+            "folder_separator_icon": "/"
           },
           "style": "powerline",
           "template": " \uea83  {{ path .Path .Location }} ",
           "type": "path"
         },
-        
         {
           "foreground": "#000000",
           "background": "#59c9a5",
@@ -35,9 +34,6 @@
             "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
             "{{ if gt .Behind 0 }}#B388FF{{ end }}"
           ],
-          
-          
-          
           "properties": {
             "branch_max_length": 25,
             "fetch_stash_count": true,
@@ -47,10 +43,8 @@
           "style": "powerline",
           "powerline_symbol": "",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
-          
           "type": "git"
         },
-
         {
           "background": "#ffff66",
           "foreground": "#111111",
@@ -89,9 +83,7 @@
     {
       "alignment": "right",
       "newline": true,
-      
       "segments": [
-        
         {
           "background": "#6CA35E",
           "foreground": "#ffffff",
@@ -112,8 +104,6 @@
         },
         {
           "type": "angular",
-          
-          
           "foreground": "#ffffff",
           "background": "#c40030",
           "template": "  {{ .Full }} ",
@@ -128,7 +118,6 @@
             "display_mode": "files",
             "fetch_virtual_env": true
           },
-
           "style": "diamond",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
           "type": "python",
@@ -138,7 +127,6 @@
         {
           "background": "#8ED1F7",
           "foreground": "#111111",
-          
           "properties": {
             "fetch_version": true
           },
@@ -151,7 +139,6 @@
         {
           "background": "#4063D8",
           "foreground": "#111111",
-          
           "properties": {
             "fetch_version": true
           },
@@ -164,7 +151,6 @@
         {
           "background": "#AE1401",
           "foreground": "#ffffff",
-          
           "properties": {
             "display_mode": "files",
             "fetch_version": true
@@ -178,7 +164,6 @@
         {
           "background": "#FEAC19",
           "foreground": "#ffffff",
-         
           "properties": {
             "display_mode": "files",
             "fetch_version": false
@@ -195,7 +180,6 @@
             "{{if contains \"jan\" .Profile}}#f1184c{{end}}"
           ],
           "foreground": "#ffffff",
-          
           "properties": {
             "display_default": false
           },
@@ -223,19 +207,15 @@
           "background": "#2e71e0",
           "template": " ⎈ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
         },
-
         {
           "background": "#a7cae1",
           "foreground": "#100e23",
-          
           "template": " Helm {{ .Version }}",
           "style": "diamond",
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
           "type": "helm"
         }
-
-
       ],
       "type": "prompt"
     },
