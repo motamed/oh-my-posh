@@ -10,7 +10,7 @@
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           
-          "template": "{{ if eq .Shell \"pwsh\" }} \uebc7 {{ end }}{{ if eq .OS \"ubuntu\" }} \uebc9 {{ end }} {{ .UserName }}  ",
+          "template": "{{ if eq .Shell \"pwsh\" }} \uebc7 {{ end }}{{ if eq .OS \"ubuntu\" }} \uebc9 {{ end }} ",
           "trailing_diamond": "\ue0b0",
           "background_templates": [
             "{{ if eq .Shell \"pwsh\" }}#1f3045{{ end }}",
